@@ -32,9 +32,9 @@ TOKEN = os.getenv("TOKEN")
 
 # --- Configuration ---
 # IMPORTANT: Replace these with your actual channel IDs.
-SERVER_COUNT_CHANNEL_ID = 1419729255977189467  # Replace with your server count channel ID
-USER_COUNT_CHANNEL_ID = 1419729283861184632    # Replace with your user count channel ID
-LOG_CHANNEL_ID = 1396794297386532978 # Replace with the channel ID for join/leave logs
+SERVER_COUNT_CHANNEL_ID = URCHANNEL  # Replace with your server count channel ID
+USER_COUNT_CHANNEL_ID = URCHANNEL    # Replace with your user count channel ID
+LOG_CHANNEL_ID = URCHANNEL # Replace with the channel ID for join/leave logs
 
 
 client = zyrox()
@@ -107,7 +107,7 @@ async def on_command_completion(context: commands.Context) -> None:
     full_command_name = context.command.qualified_name
     split = full_command_name.split("\n")
     executed_command = str(split[0])
-    webhook_url = "https://discord.com/api/webhooks/1393938120575029278/DZfp7Irx4oQprKZ1LjouSCZGKawEesXo4YMuIj7x5XspS24WTamTzKG4TqQan125_Qfw"
+    webhook_url = "YOU-WEBHOOK"
     async with aiohttp.ClientSession() as session:
         webhook = discord.Webhook.from_url(webhook_url, session=session)
 
