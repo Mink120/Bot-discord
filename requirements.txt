@@ -36,3 +36,5 @@ colorama
 chess
 python-dateutil
 deep-translator==1.11.4
+core
+
